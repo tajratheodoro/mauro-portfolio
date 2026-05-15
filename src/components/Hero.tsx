@@ -11,27 +11,27 @@ const images = [
   {
     url: secao14,
     title: 'Narrativa Visual',
-    subtitle: 'Capturando momentos com um olhar cinematografico'
+    subtitle: 'Capturando momentos com um olhar cinematográfico'
   },
   {
     url: secao11,
     title: 'Fotografia & Filme',
-    subtitle: 'Midia profissional para marcas e pessoas'
+    subtitle: 'Mídia profissional para marcas e pessoas'
   },
   {
     url: secao15,
-    title: 'Servico Profissional',
-    subtitle: 'Producao de alta qualidade para todos os formatos'
+    title: 'Serviço Profissional',
+    subtitle: 'Produção de alta qualidade para todos os formatos'
   },
   {
     url: secao13,
-    title: 'Retratos Cinematograficos',
-    subtitle: 'Imagens com presenca, ritmo e intencao'
+    title: 'Retratos Cinematográficos',
+    subtitle: 'Imagens com presença, ritmo e intenção'
   },
   {
     url: secao12,
-    title: 'Direcao Criativa',
-    subtitle: 'Narrativas visuais criadas para emocao e desejo'
+    title: 'Direção Criativa',
+    subtitle: 'Narrativas visuais criadas para emoção e desejo'
   }
 ];
 
