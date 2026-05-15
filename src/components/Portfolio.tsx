@@ -23,15 +23,15 @@ type Project = {
 };
 
 const projects: Project[] = [
-  { id: 1, type: 'photo', title: 'Projeto 01', category: 'Photography', url: secao31 },
-  { id: 2, type: 'photo', title: 'Projeto 02', category: 'Photography', url: secao32 },
-  { id: 3, type: 'video', title: 'Projeto 03', category: 'Cinematography', url: secao33 },
-  { id: 4, type: 'video', title: 'Projeto 04', category: 'Cinematography', url: secao34, muted: true },
-  { id: 5, type: 'photo', title: 'Projeto 05', category: 'Photography', url: secao35 },
-  { id: 6, type: 'video', title: 'Projeto 06', category: 'Cinematography', url: secao36 },
-  { id: 7, type: 'photo', title: 'Projeto 07', category: 'Photography', url: secao361 },
-  { id: 8, type: 'photo', title: 'Projeto 08', category: 'Photography', url: secao37 },
-  { id: 9, type: 'photo', title: 'Projeto 09', category: 'Photography', url: secao38 },
+  { id: 1, type: 'photo', title: 'Projeto 1', category: 'Photography', url: secao31 },
+  { id: 2, type: 'photo', title: 'Projeto 2', category: 'Photography', url: secao32 },
+  { id: 3, type: 'video', title: 'Projeto 3', category: 'Cinematography', url: secao33 },
+  { id: 4, type: 'video', title: 'Projeto 4', category: 'Cinematography', url: secao34, muted: true },
+  { id: 5, type: 'photo', title: 'Projeto 5', category: 'Photography', url: secao35 },
+  { id: 6, type: 'video', title: 'Projeto 6', category: 'Cinematography', url: secao36 },
+  { id: 7, type: 'photo', title: 'Projeto 7', category: 'Photography', url: secao361 },
+  { id: 8, type: 'photo', title: 'Projeto 8', category: 'Photography', url: secao37 },
+  { id: 9, type: 'photo', title: 'Projeto 9', category: 'Photography', url: secao38 },
   { id: 10, type: 'video', title: 'Projeto 10', category: 'Cinematography', url: secao39 },
   { id: 11, type: 'video', title: 'Projeto 11', category: 'Cinematography', url: secao310 },
 ];
@@ -98,15 +98,17 @@ const Portfolio = () => {
                   />
                 )}
                 
-                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-8">
-                  <p className="text-white/60 text-xs uppercase tracking-widest mb-2">{project.category}</p>
-                  <h4 className="text-white text-2xl font-display font-medium">{project.title}</h4>
+                <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 pt-16 text-left opacity-100 transition-opacity duration-500 md:inset-0 md:flex-col md:items-center md:justify-center md:bg-black/60 md:p-8 md:text-center md:opacity-0 md:group-hover:opacity-100">
+                  <div>
+                    <p className="mb-2 hidden text-xs uppercase tracking-widest text-white/60 md:block">{project.category}</p>
+                    <h4 className="font-display text-xl font-medium text-white md:text-2xl">{project.title}</h4>
+                  </div>
                   
                   <motion.button 
                     onClick={() => setSelectedProject(project)}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="mt-8 px-6 py-2 border border-white text-white text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-colors"
+                    className="shrink-0 border border-white px-4 py-2 text-xs uppercase tracking-widest text-white transition-colors hover:bg-white hover:text-black md:mt-8 md:px-6"
                   >
                     Ver Projeto
                   </motion.button>
