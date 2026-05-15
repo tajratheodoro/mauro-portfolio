@@ -13,18 +13,28 @@ import secao38 from '@/images/secao3.8.webp';
 import secao39 from '@/images/secao3.9.mp4';
 import secao310 from '@/images/secao3.10.mp4';
 
-const projects = [
+type Project = {
+  id: number;
+  type: 'photo' | 'video';
+  title: string;
+  category: string;
+  url: string;
+  poster?: string;
+  muted?: boolean;
+};
+
+const projects: Project[] = [
   { id: 1, type: 'photo', title: 'Projeto 01', category: 'Photography', url: secao31 },
   { id: 2, type: 'photo', title: 'Projeto 02', category: 'Photography', url: secao32 },
-  { id: 3, type: 'video', title: 'Projeto 03', category: 'Cinematography', url: secao33 },
-  { id: 4, type: 'video', title: 'Projeto 04', category: 'Cinematography', url: secao34, muted: true },
+  { id: 3, type: 'video', title: 'Projeto 03', category: 'Cinematography', url: secao33, poster: secao31 },
+  { id: 4, type: 'video', title: 'Projeto 04', category: 'Cinematography', url: secao34, poster: secao32, muted: true },
   { id: 5, type: 'photo', title: 'Projeto 05', category: 'Photography', url: secao35 },
-  { id: 6, type: 'video', title: 'Projeto 06', category: 'Cinematography', url: secao36 },
+  { id: 6, type: 'video', title: 'Projeto 06', category: 'Cinematography', url: secao36, poster: secao35 },
   { id: 7, type: 'photo', title: 'Projeto 07', category: 'Photography', url: secao361 },
   { id: 8, type: 'photo', title: 'Projeto 08', category: 'Photography', url: secao37 },
   { id: 9, type: 'photo', title: 'Projeto 09', category: 'Photography', url: secao38 },
-  { id: 10, type: 'video', title: 'Projeto 10', category: 'Cinematography', url: secao39 },
-  { id: 11, type: 'video', title: 'Projeto 11', category: 'Cinematography', url: secao310 },
+  { id: 10, type: 'video', title: 'Projeto 10', category: 'Cinematography', url: secao39, poster: secao37 },
+  { id: 11, type: 'video', title: 'Projeto 11', category: 'Cinematography', url: secao310, poster: secao38 },
 ];
 
 const Portfolio = () => {
@@ -75,11 +85,12 @@ const Portfolio = () => {
                 {project.type === 'video' ? (
                   <video
                     src={project.url}
+                    poster={project.poster}
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                     muted={project.muted === true}
                     loop
                     playsInline
-                    preload="metadata"
+                    preload="none"
                   />
                 ) : (
                   <img 
@@ -142,6 +153,7 @@ const Portfolio = () => {
               {selectedProject.type === 'video' ? (
                 <video
                   src={selectedProject.url}
+                  poster={selectedProject.poster}
                   className="max-h-[82vh] w-full bg-black object-contain"
                   controls
                   autoPlay
