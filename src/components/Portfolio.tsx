@@ -23,17 +23,17 @@ type Project = {
 };
 
 const projects: Project[] = [
-  { id: 1, type: 'photo', title: 'Projeto 1', category: 'Photography', url: secao31 },
-  { id: 2, type: 'photo', title: 'Projeto 2', category: 'Photography', url: secao32 },
-  { id: 3, type: 'video', title: 'Projeto 3', category: 'Cinematography', url: secao33 },
-  { id: 4, type: 'video', title: 'Projeto 4', category: 'Cinematography', url: secao34, muted: true },
-  { id: 5, type: 'photo', title: 'Projeto 5', category: 'Photography', url: secao35 },
-  { id: 6, type: 'video', title: 'Projeto 6', category: 'Cinematography', url: secao36 },
-  { id: 7, type: 'photo', title: 'Projeto 7', category: 'Photography', url: secao361 },
-  { id: 8, type: 'photo', title: 'Projeto 8', category: 'Photography', url: secao37 },
-  { id: 9, type: 'photo', title: 'Projeto 9', category: 'Photography', url: secao38 },
-  { id: 10, type: 'video', title: 'Projeto 10', category: 'Cinematography', url: secao39 },
-  { id: 11, type: 'video', title: 'Projeto 11', category: 'Cinematography', url: secao310 },
+  { id: 1, type: 'photo', title: 'Fotografia Automotiva', category: 'Photography', url: secao31 },
+  { id: 2, type: 'photo', title: 'Estética Automotiva', category: 'Photography', url: secao32 },
+  { id: 3, type: 'video', title: 'Anúncio Automotivo', category: 'Cinematography', url: secao33 },
+  { id: 4, type: 'video', title: 'Tatuagem em Produção', category: 'Cinematography', url: secao34, muted: true },
+  { id: 5, type: 'photo', title: 'Tatuagem', category: 'Photography', url: secao35 },
+  { id: 6, type: 'video', title: 'Reels Automotivo', category: 'Cinematography', url: secao36 },
+  { id: 7, type: 'photo', title: 'Detalhes Automotivo', category: 'Photography', url: secao361 },
+  { id: 8, type: 'photo', title: 'Fotografia - Retrato', category: 'Photography', url: secao37 },
+  { id: 9, type: 'photo', title: 'Fotografia - Retrato', category: 'Photography', url: secao38 },
+  { id: 10, type: 'video', title: 'Reels para Evento', category: 'Cinematography', url: secao39 },
+  { id: 11, type: 'video', title: 'Conexão Emocial - Filmmaking', category: 'Cinematography', url: secao310 },
 ];
 
 const Portfolio = () => {
