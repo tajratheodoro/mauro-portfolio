@@ -21,11 +21,11 @@ A aplicação foi construída utilizando as tecnologias mais modernas do ecossis
 
 ##  Funcionalidades em Destaque (Diferenciais Técnicos)
 
-* ** Otimização Avançada de Mídia (Preloading & Lazy Loading):** Mecanismo customizado via React Hooks para pré-carregamento assíncrono de imagens críticas da seção Hero em memória, mitigando problemas de *Layout Shift* (CLS) e telas brancas. Suporte nativo a elementos `eager` e `lazy` combinado com codecs modernos (`.webp` e `.mp4`).
-* ** Sistema Dinâmico de Portfólio (Filtro Adaptável):** Layout fluido baseado em estado contínuo para transição de categorias (*All, Photography, Cinematography*). Renderização inteligente que distingue dinamicamente elementos de imagem e vídeo com atributos de otimização mobile (`playsInline`, `muted`, `preload="metadata"`).
-* ** Modal de Exibição Imersiva (LightBox):** Tela cheia dinâmica integrada com controle estrito de ciclo de vida de mídia e isolamento de propagação de eventos do DOM, permitindo a reprodução automática de vídeos de alta fidelidade sob demanda.
-* ** Animações Baseadas em Movimento Realista:** Transições de opacidade, rotação, escala e scroll-triggered configuradas cirurgicamente via `motion` (Framer Motion v12) com curvas de interpolação personalizadas (`easeOut` e bezier cúbico).
-* ** Dark Mode & Design System Semântico:** Arquitetura visual contemporânea (*Cinematic Dark*) que utiliza as novas capacidades globais do **Tailwind CSS v4** para alternância suave de cores e tipografia focada em exibição de mídia.
+** Otimização Avançada de Mídia (Preloading & Lazy Loading):** Mecanismo customizado via React Hooks para pré-carregamento assíncrono de imagens críticas da seção Hero em memória, mitigando problemas de *Layout Shift* (CLS) e telas brancas. Suporte nativo a elementos `eager` e `lazy` combinado com codecs modernos (`.webp` e `.mp4`).
+** Sistema Dinâmico de Portfólio (Filtro Adaptável):** Layout fluido baseado em estado contínuo para transição de categorias (*All, Photography, Cinematography*). Renderização inteligente que distingue dinamicamente elementos de imagem e vídeo com atributos de otimização mobile (`playsInline`, `muted`, `preload="metadata"`).
+** Modal de Exibição Imersiva (LightBox):** Tela cheia dinâmica integrada com controle estrito de ciclo de vida de mídia e isolamento de propagação de eventos do DOM, permitindo a reprodução automática de vídeos de alta fidelidade sob demanda.
+** Animações Baseadas em Movimento Realista:** Transições de opacidade, rotação, escala e scroll-triggered configuradas cirurgicamente via `motion` (Framer Motion v12) com curvas de interpolação personalizadas (`easeOut` e bezier cúbico).
+** Dark Mode & Design System Semântico:** Arquitetura visual contemporânea (*Cinematic Dark*) que utiliza as novas capacidades globais do **Tailwind CSS v4** para alternância suave de cores e tipografia focada em exibição de mídia.
 
 ---
 
@@ -33,12 +33,12 @@ A aplicação foi construída utilizando as tecnologias mais modernas do ecossis
 
 O projeto utiliza o estado da arte do desenvolvimento web moderno:
 
-* **React 19.0:** Utilização de novas otimizações de concorrência e renderização de componentes.
-* **Vite 6.2:** Ferramental de bundling ultrarrápido com Hot Module Replacement (HMR) otimizado.
-* **Tailwind CSS v4.1:** Nova geração do framework utilitário, operando com o novo compilador nativo via Vite, entregando arquivos CSS finais extremamente reduzidos.
-* **TypeScript 5.8:** Tipagem estática estrita garantindo segurança em tempo de compilação para estruturas de dados complexas de projetos.
-* **Motion (Framer Motion v12):** Engine de animações robusta para manipulação performática do DOM através de aceleração por hardware.
-* **Lucide React:** Conjunto de ícones vetoriais leves e totalmente customizáveis.
+**React 19.0:** Utilização de novas otimizações de concorrência e renderização de componentes.
+**Vite 6.2:** Ferramental de bundling ultrarrápido com Hot Module Replacement (HMR) otimizado.
+**Tailwind CSS v4.1:** Nova geração do framework utilitário, operando com o novo compilador nativo via Vite, entregando arquivos CSS finais extremamente reduzidos.
+**TypeScript 5.8:** Tipagem estática estrita garantindo segurança em tempo de compilação para estruturas de dados complexas de projetos.
+**Motion (Framer Motion v12):** Engine de animações robusta para manipulação performática do DOM através de aceleração por hardware.
+**Lucide React:** Conjunto de ícones vetoriais leves e totalmente customizáveis.
 
 ---
 
