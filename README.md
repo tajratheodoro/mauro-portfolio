@@ -37,10 +37,15 @@ A aplicação foi construída utilizando as tecnologias mais modernas do ecossis
 O projeto utiliza o estado da arte do desenvolvimento web moderno:
 
 **React 19.0:** Utilização de novas otimizações de concorrência e renderização de componentes.
+
 **Vite 6.2:** Ferramental de bundling ultrarrápido com Hot Module Replacement (HMR) otimizado.
+
 **Tailwind CSS v4.1:** Nova geração do framework utilitário, operando com o novo compilador nativo via Vite, entregando arquivos CSS finais extremamente reduzidos.
+
 **TypeScript 5.8:** Tipagem estática estrita garantindo segurança em tempo de compilação para estruturas de dados complexas de projetos.
+
 **Motion (Framer Motion v12):** Engine de animações robusta para manipulação performática do DOM através de aceleração por hardware.
+
 **Lucide React:** Conjunto de ícones vetoriais leves e totalmente customizáveis.
 
 ---
