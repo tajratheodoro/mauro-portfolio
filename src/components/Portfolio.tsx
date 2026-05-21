@@ -150,14 +150,15 @@ const Portfolio = () => {
             >
               {selectedProject.type === 'video' ? (
                 <video
-                  src={selectedProject.url}
                   poster={selectedProject.poster}
                   className="max-h-[82vh] w-full bg-black object-contain"
                   controls
                   muted={selectedProject.muted === true}
                   playsInline
                   preload="metadata"
-                />
+                >
+                  <source src={selectedProject.url} type="video/mp4; codecs=&quot;avc1.42C01F, mp4a.40.2&quot;" />
+                </video>
               ) : (
                 <img
                   src={selectedProject.url}
