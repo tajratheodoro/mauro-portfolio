@@ -12,6 +12,11 @@ import secao37 from '@/images/secao3.7.webp';
 import secao38 from '@/images/secao3.8.webp';
 import secao39 from '@/images/secao3.9.mp4';
 import secao310 from '@/images/secao3.10.mp4';
+import secao33Poster from '@/images/secao3.3-poster.webp';
+import secao34Poster from '@/images/secao3.4-poster.webp';
+import secao36Poster from '@/images/secao3.6-poster.webp';
+import secao39Poster from '@/images/secao3.9-poster.webp';
+import secao310Poster from '@/images/secao3.10-poster.webp';
 
 type Project = {
   id: number;
@@ -19,21 +24,22 @@ type Project = {
   title: string;
   category: string;
   url: string;
+  poster?: string;
   muted?: boolean;
 };
 
 const projects: Project[] = [
   { id: 1, type: 'photo', title: 'Fotografia Automotiva', category: 'Photography', url: secao31 },
   { id: 2, type: 'photo', title: 'Estética Automotiva', category: 'Photography', url: secao32 },
-  { id: 3, type: 'video', title: 'Anúncio Automotivo', category: 'Cinematography', url: secao33 },
-  { id: 4, type: 'video', title: 'Tatuagem em Produção', category: 'Cinematography', url: secao34, muted: true },
+  { id: 3, type: 'video', title: 'Anúncio Automotivo', category: 'Cinematography', url: secao33, poster: secao33Poster },
+  { id: 4, type: 'video', title: 'Tatuagem em Produção', category: 'Cinematography', url: secao34, poster: secao34Poster, muted: true },
   { id: 5, type: 'photo', title: 'Tatuagem', category: 'Photography', url: secao35 },
-  { id: 6, type: 'video', title: 'Reels Automotivo', category: 'Cinematography', url: secao36 },
+  { id: 6, type: 'video', title: 'Reels Automotivo', category: 'Cinematography', url: secao36, poster: secao36Poster },
   { id: 7, type: 'photo', title: 'Detalhes Automotivo', category: 'Photography', url: secao361 },
   { id: 8, type: 'photo', title: 'Fotografia - Retrato', category: 'Photography', url: secao37 },
   { id: 9, type: 'photo', title: 'Fotografia - Retrato', category: 'Photography', url: secao38 },
-  { id: 10, type: 'video', title: 'Reels para Evento', category: 'Cinematography', url: secao39 },
-  { id: 11, type: 'video', title: 'Conexão Emocial - Filmmaking', category: 'Cinematography', url: secao310 },
+  { id: 10, type: 'video', title: 'Reels para Evento', category: 'Cinematography', url: secao39, poster: secao39Poster },
+  { id: 11, type: 'video', title: 'Conexão Emocial - Filmmaking', category: 'Cinematography', url: secao310, poster: secao310Poster },
 ];
 
 const Portfolio = () => {
@@ -82,13 +88,10 @@ const Portfolio = () => {
                 className="group relative aspect-[4/5] overflow-hidden bg-gray-200 dark:bg-gray-800"
               >
                 {project.type === 'video' ? (
-                  <video
-                    src={project.url}
+                  <img
+                    src={project.poster}
+                    alt={project.title}
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    muted={project.muted === true}
-                    loop
-                    playsInline
-                    preload="metadata"
                   />
                 ) : (
                   <img 
@@ -148,11 +151,12 @@ const Portfolio = () => {
               {selectedProject.type === 'video' ? (
                 <video
                   src={selectedProject.url}
+                  poster={selectedProject.poster}
                   className="max-h-[82vh] w-full bg-black object-contain"
                   controls
-                  autoPlay
                   muted={selectedProject.muted === true}
                   playsInline
+                  preload="metadata"
                 />
               ) : (
                 <img
