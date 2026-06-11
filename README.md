@@ -32,7 +32,7 @@ A aplicação foi construída utilizando as tecnologias mais modernas do ecossis
 
 ---
 
-## 🛠️ Tecnologias e Ferramentas
+## Tecnologias e Ferramentas
 
 O projeto utiliza o estado da arte do desenvolvimento web moderno:
 
